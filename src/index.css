@@ -1,0 +1,137 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode theme - we'll keep this for users who prefer light mode */
+    --background: 220 20% 97%;
+    --foreground: 224 71% 4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    
+    /* New colors based on the logo image */
+    --primary: 42 100% 65%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 222 47% 23%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+    
+    --accent: 348 80% 55%;
+    --accent-foreground: 222 47% 11%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 42 100% 65%;
+    
+    --radius: 0.5rem;
+
+    --success: 142 76% 36%;
+    --warning: 32 95% 44%;
+    --info: 221 83% 53%;
+  }
+  
+  /* Dark theme as default */
+  :root {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+    
+    /* New colors based on the logo image */
+    --primary: 42 100% 65%;
+    --primary-foreground: 213 31% 91%;
+    
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 213 31% 91%;
+    
+    --muted: 215 25% 27%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    
+    --accent: 348 80% 55%;
+    --accent-foreground: 213 31% 91%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 213 31% 91%;
+    
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 42 100% 65%;
+
+    --success: 142 70% 45%;
+    --warning: 32 95% 50%;
+    --info: 221 83% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-background to-background/80;
+    background-attachment: fixed;
+  }
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10 shadow-lg;
+  }
+  
+  .glass-card {
+    @apply glass rounded-xl;
+  }
+  
+  .glass-input {
+    @apply bg-black/20 border-white/10 focus:border-primary/50 focus:bg-black/30 transition-all;
+  }
+  
+  .glass-button {
+    @apply bg-gradient-to-br from-primary/80 to-accent/80 backdrop-blur-sm hover:from-primary/90 hover:to-accent/90 transition-all duration-300 shadow-md hover:shadow-primary/20;
+  }
+  
+  .glass-button-outline {
+    @apply bg-white/5 backdrop-blur-sm hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-300 shadow-md;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .text-gradient-logo {
+    @apply bg-gradient-to-br from-primary via-yellow-300 to-accent bg-clip-text text-transparent;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
