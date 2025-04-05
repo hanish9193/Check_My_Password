@@ -3,7 +3,7 @@
 **Check My Password** is an intelligent password management and security application that combines advanced cryptographic tools, AI-powered analysis, and modern design principles to help users generate, evaluate, and securely store strong passwords — all processed **locally in your browser**.
 
 ---
-
+![Password Vault](Screenshot%202025-04-01%20141300.png)
 ## 🚀 Features
 
 ### 1. 🧠 AI-Powered Password Analysis
@@ -35,7 +35,7 @@
 - Real-time feedback with vibrant visual indicators
 
 ---
-
+![Password Strength Analysis](Screenshot%202025-04-01%20141312.png)
 ## ⚙️ Tech Stack
 
 - **React + TypeScript** – Strongly typed modern UI development
@@ -52,7 +52,7 @@
 - **No passwords or data leave your browser**
 - Secure local storage (no plain text storage)
 - Built using **industry-standard hashing algorithms**
-
+![Modern UI](Screenshot%202025-04-01%20141336.png)
 ---
 
 ## 📦 Getting Started
