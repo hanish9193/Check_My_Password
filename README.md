@@ -1,69 +1,69 @@
-# Welcome to your Lovable project
+# 🔐 Check My Password
 
-## Project info
+**Check My Password** is an intelligent password management and security application that combines advanced cryptographic tools, AI-powered analysis, and modern design principles to help users generate, evaluate, and securely store strong passwords — all processed **locally in your browser**.
 
-**URL**: https://lovable.dev/projects/8ae03f50-f186-4113-a538-6484dbff0bdb
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### 1. 🧠 AI-Powered Password Analysis
+- Dynamic strength evaluation using entropy, character variety, and complexity
+- Time-to-crack estimation based on computing power benchmarks
+- Smart improvement suggestions for weak passwords
+- Alerts for commonly used or breached passwords
 
-**Use Lovable**
+### 2. 🔐 Password Generation & Vault
+- Customizable password generator (length, symbols, cases, numbers)
+- Secure vault for saving and managing passwords
+- Edit/delete functionality with intuitive controls
+- Export stored passwords as **PDF reports**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8ae03f50-f186-4113-a538-6484dbff0bdb) and start prompting.
+### 3. 🛡️ Cryptographic Tools
+- Password hashing (bcrypt, SHA-256)
+- Secure hash verification
+- Visual cues for hash integrity and password strength
 
-Changes made via Lovable will be committed automatically to this repo.
+### 4. 📂 Bulk Password Analysis
+- Analyze multiple passwords at once
+- Detect weak/compromised passwords in batches
+- Compare password strengths across datasets
 
-**Use your preferred IDE**
+### 5. 🎨 Beautiful UI & UX
+- **Glassmorphism** design for a modern look
+- **Interactive 3D backgrounds** powered by Spline
+- Smooth animations, responsive layout
+- Real-time feedback with vibrant visual indicators
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ⚙️ Tech Stack
 
-Follow these steps:
+- **React + TypeScript** – Strongly typed modern UI development
+- **Tailwind CSS** – Utility-first styling with custom animation support
+- **Shadcn UI** – Reusable and accessible UI components
+- **Spline** – 3D interactive graphics
+- **Client-Side Crypto Libraries** – `bcrypt`, `crypto-js`, etc.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔒 Privacy & Security
 
-# Step 3: Install the necessary dependencies.
-npm i
+- All operations are **100% client-side**
+- **No passwords or data leave your browser**
+- Secure local storage (no plain text storage)
+- Built using **industry-standard hashing algorithms**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 📦 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/hanish9193/Check_My_Password.git
+cd Check_My_Password
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8ae03f50-f186-4113-a538-6484dbff0bdb) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
